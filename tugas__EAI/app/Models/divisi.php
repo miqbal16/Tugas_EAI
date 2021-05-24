@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class divisi extends Model
 {
+    use HasFactory;
+    public $table = 'divisis';
     protected $fillable = [
         'id_divisi',
         'nama_divisi',
