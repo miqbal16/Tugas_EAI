@@ -22,7 +22,7 @@ class DivisiFactory extends Factory
     public function definition()
     {
         return [
-            'id_divisi' => $this->faker->randomDigit(),
+            'id_divisi' => $this->faker->unique()->randomDigit(),
             'nama_divisi' => $this->faker->company,
             'jumlah_anggota'=> $this->faker->randomDigit(),
         ];

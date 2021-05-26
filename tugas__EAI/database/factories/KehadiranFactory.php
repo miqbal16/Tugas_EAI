@@ -22,7 +22,7 @@ class KehadiranFactory extends Factory
     public function definition()
     {
         return [
-            'id_kehadiran' => $this->faker->randomDigit(),
+            'id_kehadiran' => $this->faker->unique()->randomDigit(),
             'NIP' => $this->faker->randomNumber(),
             'tanggal' => $this->faker->dateTime(),
             'jam_datang' => $this->faker->time(),

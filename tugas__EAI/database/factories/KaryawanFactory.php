@@ -23,8 +23,8 @@ class KaryawanFactory extends Factory
     public function definition()
     {
         return [
-            'NIP' => $this->faker->randomNumber(),
-            'id_divisi' => $this->faker->randomDigit(), 
+            'NIP' => $this->faker->unique()->randomNumber(),
+            'id_divisi' => $this->faker->randomDigit(),
             'no_telepon' => $this->faker->phoneNumber,
             'alamat' => $this->faker->address,
             'jabatan' => $this->faker->jobTitle,

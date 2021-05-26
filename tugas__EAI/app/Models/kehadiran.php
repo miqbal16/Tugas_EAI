@@ -10,7 +10,7 @@ class kehadiran extends Model
     use HasFactory;
 
     public $table = 'kehadirans';
-
+    protected $primaryKey = 'id_kehadiran';
 
     protected $fillable = [
         'id_kehadiran',
