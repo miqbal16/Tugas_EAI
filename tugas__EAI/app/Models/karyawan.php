@@ -13,6 +13,8 @@ class Karyawan extends Model
     protected $primaryKey = 'NIP';
     protected $fillable = [
         'NIP',
+        'nama_depan',
+        'nama_belakang',
         'id_divisi',
         'no_telepon',
         'alamat',
